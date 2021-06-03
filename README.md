@@ -16,7 +16,7 @@ converter.label();
 
 ```java
 Converter converter = new LengthConverter().fromFeet().toMeters();
-double value = converter.convert(3.5);
+double value = converter.convert(1);
 ```
 
 Units (US)
@@ -31,3 +31,16 @@ Units (SI)
 - Decimeters
 - Meters
 - Kilometers
+
+## Force ##
+
+```java
+Converter converter = new ForceConverter().fromNewtons().toPoundForce();
+double value = converter.convert(1);
+```
+
+Units (US)
+- Pounds (force)
+
+Units (SI)
+- Newtons

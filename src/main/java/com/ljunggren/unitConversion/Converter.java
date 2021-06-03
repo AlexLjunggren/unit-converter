@@ -1,7 +1,6 @@
 package com.ljunggren.unitConversion;
 
 import com.ljunggren.unitConversion.base.BaseChain;
-import com.ljunggren.unitConversion.length.Length;
 
 public abstract class Converter {
 
@@ -10,13 +9,13 @@ public abstract class Converter {
     protected Unit to;
 
     @SuppressWarnings("unchecked")
-    protected <T extends Converter> T setFrom(Length from) {
+    protected <T extends Converter> T setFrom(Unit from) {
         this.from = from;
         return (T) this;
     }
 
     @SuppressWarnings("unchecked")
-    protected <T extends Converter> T setTo(Length to) {
+    protected <T extends Converter> T setTo(Unit to) {
         this.to = to;
         return (T) this;
     }
