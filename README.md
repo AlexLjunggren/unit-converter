@@ -30,3 +30,4 @@ Units (SI)
 - Centimeters
 - Decimeters
 - Meters
+- Kilometers

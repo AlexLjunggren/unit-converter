@@ -147,6 +147,22 @@ public class LengthConverterTest {
     }
     
     @Test
+    public void convertFromKilmetersTest() {
+        Converter converter = new LengthConverter().fromKilometers().toMeters();
+        assertEquals(1000, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToKilometersTest() {
+        Converter converter = new LengthConverter().fromMeters().toKilometers();
+        assertEquals(1, converter.convert(1000.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
     public void labelTest() {
         Converter converter = new LengthConverter().fromFeet().toMeters();
         assertEquals("m", converter.label());

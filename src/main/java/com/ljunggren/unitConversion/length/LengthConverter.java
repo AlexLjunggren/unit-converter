@@ -6,6 +6,7 @@ import com.ljunggren.unitConversion.length.base.BaseLengthSiToUs;
 import com.ljunggren.unitConversion.length.base.BaseLengthUsToSi;
 import com.ljunggren.unitConversion.length.units.si.Centimeter;
 import com.ljunggren.unitConversion.length.units.si.Decimeter;
+import com.ljunggren.unitConversion.length.units.si.Kilometer;
 import com.ljunggren.unitConversion.length.units.si.Meter;
 import com.ljunggren.unitConversion.length.units.si.Millimeter;
 import com.ljunggren.unitConversion.length.units.us.Foot;
@@ -79,6 +80,13 @@ public class LengthConverter extends Converter {
     }
     public LengthConverter toMeters() {
         return setTo(new Meter());
+    }
+    
+    public LengthConverter fromKilometers() {
+        return setFrom(new Kilometer());
+    }
+    public LengthConverter toKilometers() {
+        return setTo(new Kilometer());
     }
 
 }
