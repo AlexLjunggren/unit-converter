@@ -115,6 +115,22 @@ public class LengthConverterTest {
     }
     
     @Test
+    public void converterFromDecimetersTest() {
+        Converter converter = new LengthConverter().fromDecimeters().toMeters();
+        assertEquals(0.1, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void converterToDecimetersTest() {
+        Converter converter = new LengthConverter().fromMeters().toDecimeters();
+        assertEquals(10, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
     public void convertFromMetersTest() {
         Converter converter = new LengthConverter().fromMeters().toFeet();
         assertEquals(3.2808333333, TestUtils.round(converter.convert(1.0), 10), 0);
