@@ -83,6 +83,22 @@ public class LengthConverterTest {
     }
     
     @Test
+    public void converterFromMillimetersTest() {
+        Converter converter = new LengthConverter().fromMillimeters().toMeters();
+        assertEquals(0.001, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void converterToMillimetersTest() {
+        Converter converter = new LengthConverter().fromMeters().toMillimeters();
+        assertEquals(1000, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
     public void converterFromCentimetersTest() {
         Converter converter = new LengthConverter().fromCentimeters().toMeters();
         assertEquals(0.01, converter.convert(1.0), 0);

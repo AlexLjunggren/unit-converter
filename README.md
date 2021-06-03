@@ -1,5 +1,17 @@
 ## Unit Converter ##
 
+Convert units
+
+```java
+new LengthConverter().fromFeet().toMeters().convert(3.5);
+```
+
+Get unit label
+
+```java
+converter.label();
+```
+
 ## Length ##
 
 ```java
@@ -14,5 +26,6 @@ Units (US)
 - Miles
 
 Units (SI)
+- Millimeters
 - Centimeters
 - Meters
