@@ -43,13 +43,14 @@ Units (US)
 - Teaspoons
 - Tablespoons
 - Fluid Ounces
-- Pint
+- Pints
 - Quarts
 - Gallons
 
 Units (SI)
 - Milliliters
 - Liters
+- Cubic Centimeters
 - Cubic Meters
 
 ## Force ##

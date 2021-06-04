@@ -4,6 +4,7 @@ import com.ljunggren.unitConversion.Converter;
 import com.ljunggren.unitConversion.base.BaseNoChange;
 import com.ljunggren.unitConversion.volume.base.BaseVolumeSiToUs;
 import com.ljunggren.unitConversion.volume.base.BaseVolumeUsToSi;
+import com.ljunggren.unitConversion.volume.units.si.CubicCentimeter;
 import com.ljunggren.unitConversion.volume.units.si.CubicMeter;
 import com.ljunggren.unitConversion.volume.units.si.Liter;
 import com.ljunggren.unitConversion.volume.units.si.Milliliter;
@@ -76,6 +77,13 @@ public class VolumeConverter extends Converter {
     }
     public VolumeConverter toLiters() {
         return setTo(new Liter());
+    }
+    
+    public VolumeConverter fromCubicCentimeters() {
+        return setFrom(new CubicCentimeter());
+    }
+    public VolumeConverter toCubicCentimeters() {
+        return setTo(new CubicCentimeter());
     }
     
     public VolumeConverter fromCubicMeters() {

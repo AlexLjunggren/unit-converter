@@ -145,6 +145,22 @@ public class VolumeConverterTest {
     }
     
     @Test
+    public void convertFromCubicCentimeters() {
+        Converter converter = new VolumeConverter().fromCubicCentimeters().toLiters();
+        assertEquals(1, converter.convert(1000.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToCubicCentimeters() {
+        Converter converter = new VolumeConverter().fromLiters().toCubicCentimeters();
+        assertEquals(1000, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
     public void convertFromCubicMeters() {
         Converter converter = new VolumeConverter().fromCubicMeters().toLiters();
         assertEquals(1000, converter.convert(1.0), 0);
