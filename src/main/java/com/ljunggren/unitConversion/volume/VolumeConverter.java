@@ -8,6 +8,7 @@ import com.ljunggren.unitConversion.volume.units.si.CubicCentimeter;
 import com.ljunggren.unitConversion.volume.units.si.CubicMeter;
 import com.ljunggren.unitConversion.volume.units.si.Liter;
 import com.ljunggren.unitConversion.volume.units.si.Milliliter;
+import com.ljunggren.unitConversion.volume.units.us.Cup;
 import com.ljunggren.unitConversion.volume.units.us.FluidOunce;
 import com.ljunggren.unitConversion.volume.units.us.Gallon;
 import com.ljunggren.unitConversion.volume.units.us.Pint;
@@ -42,6 +43,13 @@ public class VolumeConverter extends Converter {
     }
     public VolumeConverter toFluidOunces() {
         return setTo(new FluidOunce());
+    }
+    
+    public VolumeConverter fromCups() {
+        return setFrom(new Cup());
+    }
+    public VolumeConverter toCups() {
+        return setTo(new Cup());
     }
     
     public VolumeConverter fromPints() {

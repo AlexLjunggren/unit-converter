@@ -65,6 +65,22 @@ public class VolumeConverterTest {
     }
     
     @Test
+    public void convertFromCupsTest() {
+        Converter converter = new VolumeConverter().fromCups().toFluidOunces();
+        assertEquals(8, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToCupsTest() {
+        Converter converter = new VolumeConverter().fromFluidOunces().toCups();
+        assertEquals(1, converter.convert(8.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
     public void convertFromPintsTest() {
         Converter converter = new VolumeConverter().fromPints().toFluidOunces();
         assertEquals(16, converter.convert(1.0), 0);

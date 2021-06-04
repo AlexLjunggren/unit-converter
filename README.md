@@ -1,10 +1,15 @@
 ## Unit Converter ##
 
-Convert units
+Instantiate
 
 ```java
 Converter converter = new LengthConverter().fromFeet().toMeters();
-double value = converter.convert(3.5);
+```
+
+Convert
+
+```java
+converter.convert(3.5);
 ```
 
 Get unit label
@@ -43,6 +48,7 @@ Units (US)
 - Teaspoons
 - Tablespoons
 - Fluid Ounces
+- Cups
 - Pints
 - Quarts
 - Gallons
