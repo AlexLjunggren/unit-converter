@@ -17,6 +17,22 @@ public class VolumeConverterTest {
     }
 
     @Test
+    public void convertFromTeaspoonsTest() {
+        Converter converter = new VolumeConverter().fromTeaspoons().toFluidOunces();
+        assertEquals(1, converter.convert(6.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToTeaSpoonsTest() {
+        Converter converter = new VolumeConverter().fromFluidOunces().toTeaspoons();
+        assertEquals(6, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
     public void convertFromFluidOuncesTest() {
         Converter converter = new VolumeConverter().fromFluidOunces().toGallons();
         assertEquals(1, converter.convert(128.0), 0);

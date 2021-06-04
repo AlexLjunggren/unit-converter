@@ -11,6 +11,7 @@ import com.ljunggren.unitConversion.volume.units.us.FluidOunce;
 import com.ljunggren.unitConversion.volume.units.us.Gallon;
 import com.ljunggren.unitConversion.volume.units.us.Pint;
 import com.ljunggren.unitConversion.volume.units.us.Quart;
+import com.ljunggren.unitConversion.volume.units.us.Teaspoon;
 
 public class VolumeConverter extends Converter {
 
@@ -18,6 +19,13 @@ public class VolumeConverter extends Converter {
         super(new BaseVolumeUsToSi()
                 .nextChain(new BaseVolumeSiToUs()
                 .nextChain(new BaseNoChange())));
+    }
+    
+    public VolumeConverter fromTeaspoons() {
+        return setFrom(new Teaspoon());
+    }
+    public VolumeConverter toTeaspoons() {
+        return setTo(new Teaspoon());
     }
     
     public VolumeConverter fromFluidOunces() {
