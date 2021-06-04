@@ -33,6 +33,38 @@ public class VolumeConverterTest {
     }
     
     @Test
+    public void convertFromPintsTest() {
+        Converter converter = new VolumeConverter().fromPints().toFluidOunces();
+        assertEquals(16, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToPintsTest() {
+        Converter converter = new VolumeConverter().fromFluidOunces().toPints();
+        assertEquals(1, converter.convert(16.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertFromQuartsTest() {
+        Converter converter = new VolumeConverter().fromQuarts().toFluidOunces();
+        assertEquals(32, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToQuartsTest() {
+        Converter converter = new VolumeConverter().fromFluidOunces().toQuarts();
+        assertEquals(1, converter.convert(32.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
     public void convertFromGallonsTest() {
         Converter converter = new VolumeConverter().fromGallons().toFluidOunces();
         assertEquals(128, converter.convert(1.0), 0);

@@ -41,6 +41,8 @@ new VolumeConverter().fromGallons().toLiters().convert(1.0);
 
 Units (US)
 - Fluid Ounces
+- Pint
+- Quarts
 - Gallons
 
 Units (SI)

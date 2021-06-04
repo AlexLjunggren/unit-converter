@@ -8,6 +8,8 @@ import com.ljunggren.unitConversion.volume.units.si.CubicMeter;
 import com.ljunggren.unitConversion.volume.units.si.Liter;
 import com.ljunggren.unitConversion.volume.units.us.FluidOunce;
 import com.ljunggren.unitConversion.volume.units.us.Gallon;
+import com.ljunggren.unitConversion.volume.units.us.Pint;
+import com.ljunggren.unitConversion.volume.units.us.Quart;
 
 public class VolumeConverter extends Converter {
 
@@ -22,6 +24,20 @@ public class VolumeConverter extends Converter {
     }
     public VolumeConverter toFluidOunces() {
         return setTo(new FluidOunce());
+    }
+    
+    public VolumeConverter fromPints() {
+        return setFrom(new Pint());
+    }
+    public VolumeConverter toPints() {
+        return setTo(new Pint());
+    }
+    
+    public VolumeConverter fromQuarts() {
+        return setFrom(new Quart());
+    }
+    public VolumeConverter toQuarts() {
+        return setTo(new Quart());
     }
     
     public VolumeConverter fromGallons() {
