@@ -4,28 +4,33 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class InchTest {
+import com.ljunggren.unitConversion.TestUnit;
+import com.ljunggren.unitConversion.length.Length;
+
+public class InchTest implements TestUnit {
+    
+    private Length length = new Inch();
 
     @Test
     public void toBaseUnitTest() {
-        assertEquals(1, new Inch().toBaseUnit().apply(1.0), 0);
-        assertEquals(0, new Inch().toBaseUnit().apply(0.0), 0);
+        assertEquals(1, length.toBaseUnit().apply(1.0), 0);
+        assertEquals(0, length.toBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void fromBaseUnitTest() {
-        assertEquals(1, new Inch().fromBaseUnit().apply(1.0), 0);
-        assertEquals(0, new Inch().fromBaseUnit().apply(0.0), 0);
+        assertEquals(1, length.fromBaseUnit().apply(1.0), 0);
+        assertEquals(0, length.fromBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void systemTest() {
-        assertNotNull(new Inch().system());
+        assertNotNull(length.system());
     }
     
     @Test
     public void labelTest() {
-        assertNotNull(new Inch().label());
+        assertNotNull(length.label());
     }
     
 }

@@ -3,7 +3,8 @@
 Convert units
 
 ```java
-new LengthConverter().fromFeet().toMeters().convert(3.5);
+Converter converter = new LengthConverter().fromFeet().toMeters();
+double value = converter.convert(3.5);
 ```
 
 Get unit label
@@ -15,8 +16,7 @@ converter.label();
 ## Length ##
 
 ```java
-Converter converter = new LengthConverter().fromFeet().toMeters();
-double value = converter.convert(1);
+new LengthConverter().fromFeet().toMeters().convert(1.0);
 ```
 
 Units (US)
@@ -32,11 +32,25 @@ Units (SI)
 - Meters
 - Kilometers
 
+## Volume ##
+
+```java
+new VolumeConverter().fromGallons().toLiters().convert(1.0);
+
+```
+
+Units (US)
+- Fluid Ounces
+- Gallons
+
+Units (SI)
+- Liters
+- Cubic Meters
+
 ## Force ##
 
 ```java
-Converter converter = new ForceConverter().fromNewtons().toPoundForce();
-double value = converter.convert(1);
+new ForceConverter().fromNewtons().toPoundForce().convert(1,0);
 ```
 
 Units (US)

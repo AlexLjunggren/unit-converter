@@ -4,28 +4,33 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class YardTest {
+import com.ljunggren.unitConversion.TestUnit;
+import com.ljunggren.unitConversion.length.Length;
+
+public class YardTest implements TestUnit {
+    
+    private Length length = new Yard();
 
     @Test
     public void toBaseUnitTest() {
-        assertEquals(36, new Yard().toBaseUnit().apply(1.0), 0);
-        assertEquals(0, new Yard().toBaseUnit().apply(0.0), 0);
+        assertEquals(36, length.toBaseUnit().apply(1.0), 0);
+        assertEquals(0, length.toBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void fromBaseUnitTest() {
-        assertEquals(1, new Yard().fromBaseUnit().apply(36.0), 0);
-        assertEquals(0, new Yard().fromBaseUnit().apply(0.0), 0);
+        assertEquals(1, length.fromBaseUnit().apply(36.0), 0);
+        assertEquals(0, length.fromBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void systemTest() {
-        assertNotNull(new Yard().system());
+        assertNotNull(length.system());
     }
     
     @Test
     public void labelTest() {
-        assertNotNull(new Yard().label());
+        assertNotNull(length.label());
     }
     
 }

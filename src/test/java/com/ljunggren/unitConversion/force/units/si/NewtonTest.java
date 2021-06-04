@@ -5,28 +5,33 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-public class NewtonTest {
+import com.ljunggren.unitConversion.TestUnit;
+import com.ljunggren.unitConversion.force.Force;
+
+public class NewtonTest implements TestUnit {
+    
+    private Force force = new Newton();
 
     @Test
     public void toBaseUnitTest() {
-        assertEquals(1, new Newton().toBaseUnit().apply(1.0), 0);
-        assertEquals(0, new Newton().toBaseUnit().apply(0.0), 0);
+        assertEquals(1, force.toBaseUnit().apply(1.0), 0);
+        assertEquals(0, force.toBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void fromBaseUnitTest() {
-        assertEquals(1, new Newton().fromBaseUnit().apply(1.0), 0);
-        assertEquals(0, new Newton().fromBaseUnit().apply(0.0), 0);
+        assertEquals(1, force.fromBaseUnit().apply(1.0), 0);
+        assertEquals(0, force.fromBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void systemTest() {
-        assertNotNull(new Newton().system());
+        assertNotNull(force.system());
     }
     
     @Test
     public void labelTest() {
-        assertNotNull(new Newton().label());
+        assertNotNull(force.label());
     }
     
 }

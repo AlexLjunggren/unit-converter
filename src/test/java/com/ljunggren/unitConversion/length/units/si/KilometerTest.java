@@ -5,28 +5,33 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-public class KilometerTest {
+import com.ljunggren.unitConversion.TestUnit;
+import com.ljunggren.unitConversion.length.Length;
+
+public class KilometerTest implements TestUnit {
+    
+    private Length length = new Kilometer();
 
     @Test
     public void toBaseUnitTest() {
-        assertEquals(1000, new Kilometer().toBaseUnit().apply(1.0), 0);
-        assertEquals(0, new Kilometer().toBaseUnit().apply(0.0), 0);
+        assertEquals(1000, length.toBaseUnit().apply(1.0), 0);
+        assertEquals(0, length.toBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void fromBaseUnitTest() {
-        assertEquals(1, new Kilometer().fromBaseUnit().apply(1000.0), 0);
-        assertEquals(0, new Kilometer().fromBaseUnit().apply(0.0), 0);
+        assertEquals(1, length.fromBaseUnit().apply(1000.0), 0);
+        assertEquals(0, length.fromBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void systemTest() {
-        assertNotNull(new Kilometer().system());
+        assertNotNull(length.system());
     }
     
     @Test
     public void labelTest() {
-        assertNotNull(new Kilometer().label());
+        assertNotNull(length.label());
     }
     
 }

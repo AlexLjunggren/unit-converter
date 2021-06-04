@@ -5,28 +5,33 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-public class MeterTest {
+import com.ljunggren.unitConversion.TestUnit;
+import com.ljunggren.unitConversion.length.Length;
+
+public class MeterTest implements TestUnit {
+    
+    private Length length = new Meter();
 
     @Test
     public void toBaseUnitTest() {
-        assertEquals(1, new Meter().toBaseUnit().apply(1.0), 0);
-        assertEquals(0, new Meter().toBaseUnit().apply(0.0), 0);
+        assertEquals(1, length.toBaseUnit().apply(1.0), 0);
+        assertEquals(0, length.toBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void fromBaseUnitTest() {
-        assertEquals(1, new Meter().fromBaseUnit().apply(1.0), 0);
-        assertEquals(0, new Meter().fromBaseUnit().apply(0.0), 0);
+        assertEquals(1, length.fromBaseUnit().apply(1.0), 0);
+        assertEquals(0, length.fromBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void systemTest() {
-        assertNotNull(new Meter().system());
+        assertNotNull(length.system());
     }
     
     @Test
     public void labelTest() {
-        assertNotNull(new Meter().label());
+        assertNotNull(length.label());
     }
     
 }

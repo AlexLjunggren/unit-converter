@@ -5,28 +5,33 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
-public class FootTest {
+import com.ljunggren.unitConversion.TestUnit;
+import com.ljunggren.unitConversion.length.Length;
+
+public class FootTest implements TestUnit {
+    
+    private Length length = new Foot();
 
     @Test
     public void toBaseUnitTest() {
-        assertEquals(12, new Foot().toBaseUnit().apply(1.0), 0);
-        assertEquals(0, new Foot().toBaseUnit().apply(0.0), 0);
+        assertEquals(12, length.toBaseUnit().apply(1.0), 0);
+        assertEquals(0, length.toBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void fromBaseUnitTest() {
-        assertEquals(1, new Foot().fromBaseUnit().apply(12.0), 0);
-        assertEquals(0, new Foot().fromBaseUnit().apply(0.0), 0);
+        assertEquals(1, length.fromBaseUnit().apply(12.0), 0);
+        assertEquals(0, length.fromBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void systemTest() {
-        assertNotNull(new Foot().system());
+        assertNotNull(length.system());
     }
     
     @Test
     public void labelTest() {
-        assertNotNull(new Foot().label());
+        assertNotNull(length.label());
     }
     
 }
