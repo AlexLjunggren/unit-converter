@@ -1,4 +1,4 @@
-package com.ljunggren.unitConversion.volume.units.si;
+package com.ljunggren.unitConversion.volume.units.us;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
@@ -8,20 +8,20 @@ import org.junit.Test;
 import com.ljunggren.unitConversion.TestUnit;
 import com.ljunggren.unitConversion.volume.Volume;
 
-public class CubicMeterTest implements TestUnit {
+public class TablespoonTest implements TestUnit {
     
-    private Volume volume = new CubicMeter();
+    private Volume volume = new Tablespoon();
 
     @Test
     public void toBaseUnitTest() {
-        assertEquals(1000, volume.toBaseUnit().apply(1.0), 0);
+        assertEquals(1, volume.toBaseUnit().apply(2.0), 0);
         assertEquals(0, volume.toBaseUnit().apply(0.0), 0);
     }
-    
+
     @Test
     public void fromBaseUnitTest() {
-        assertEquals(1, volume.fromBaseUnit().apply(1000.0), 0);
-        assertEquals(0, volume.toBaseUnit().apply(0.0), 0);
+        assertEquals(2, volume.fromBaseUnit().apply(1.0), 0);
+        assertEquals(0, volume.fromBaseUnit().apply(0.0), 0);
     }
 
     @Test

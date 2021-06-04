@@ -33,6 +33,22 @@ public class VolumeConverterTest {
     }
     
     @Test
+    public void convertFromTablespoonsTest() {
+        Converter converter = new VolumeConverter().fromTablespoons().toFluidOunces();
+        assertEquals(1, converter.convert(2.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToTablespoonsTest() {
+        Converter converter = new VolumeConverter().fromFluidOunces().toTablespoons();
+        assertEquals(2, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
     public void convertFromFluidOuncesTest() {
         Converter converter = new VolumeConverter().fromFluidOunces().toGallons();
         assertEquals(1, converter.convert(128.0), 0);
