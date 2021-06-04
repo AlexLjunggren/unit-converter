@@ -81,6 +81,22 @@ public class VolumeConverterTest {
     }
     
     @Test
+    public void convertFromMilliliters() {
+        Converter converter = new VolumeConverter().fromMilliliters().toLiters();
+        assertEquals(1, converter.convert(1000.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToMilliliters() {
+        Converter converter = new VolumeConverter().fromLiters().toMilliliters();
+        assertEquals(1000, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
     public void convertFromLiters() {
         Converter converter = new VolumeConverter().fromLiters().toCubicMeters();
         assertEquals(1, converter.convert(1000.0), 0);

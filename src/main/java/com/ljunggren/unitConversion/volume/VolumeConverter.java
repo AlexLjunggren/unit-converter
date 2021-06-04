@@ -6,6 +6,7 @@ import com.ljunggren.unitConversion.volume.base.BaseVolumeSiToUs;
 import com.ljunggren.unitConversion.volume.base.BaseVolumeUsToSi;
 import com.ljunggren.unitConversion.volume.units.si.CubicMeter;
 import com.ljunggren.unitConversion.volume.units.si.Liter;
+import com.ljunggren.unitConversion.volume.units.si.Milliliter;
 import com.ljunggren.unitConversion.volume.units.us.FluidOunce;
 import com.ljunggren.unitConversion.volume.units.us.Gallon;
 import com.ljunggren.unitConversion.volume.units.us.Pint;
@@ -45,6 +46,13 @@ public class VolumeConverter extends Converter {
     }
     public VolumeConverter toGallons() {
         return setTo(new Gallon());
+    }
+    
+    public VolumeConverter fromMilliliters() {
+        return setFrom(new Milliliter());
+    }
+    public VolumeConverter toMilliliters() {
+        return setTo(new Milliliter());
     }
     
     public VolumeConverter fromLiters() {
