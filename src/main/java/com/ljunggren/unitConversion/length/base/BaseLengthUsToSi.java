@@ -7,12 +7,12 @@ import com.ljunggren.unitConversion.base.BaseChain;
 
 public class BaseLengthUsToSi extends BaseChain {
     
-    // Inch to Meter
+    // Foot to Meter
 
     @Override
     public Function<Double, Double> baseUnit(Unit from, Unit to) {
         if (isUS(from) && isSI(to)) {
-            return x -> x / 39.37;
+            return x -> x / 3.28084;
         }
         return nextChain.baseUnit(from, to);
     }

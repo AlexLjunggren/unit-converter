@@ -17,7 +17,7 @@ public class BaseLengthUsToSiTest {
 
     @Test
     public void baseUnitTest() {
-        double baseUnit = baseChain.baseUnit(new Inch(), new Meter()).apply(39.37);
+        double baseUnit = baseChain.baseUnit(new Inch(), new Meter()).apply(3.28084);
         assertEquals(1, baseUnit, 0);
     }
     

@@ -133,7 +133,7 @@ public class LengthConverterTest {
     @Test
     public void convertFromMetersTest() {
         Converter converter = new LengthConverter().fromMeters().toFeet();
-        assertEquals(3.2808333333, TestUtils.round(converter.convert(1.0), 10), 0);
+        assertEquals(3.28084, converter.convert(1.0), 0);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
@@ -141,7 +141,7 @@ public class LengthConverterTest {
     @Test
     public void convertToMetersTest() {
         Converter converter = new LengthConverter().fromFeet().toMeters();
-        assertEquals(0.9144018288, TestUtils.round(converter.convert(3.0), 10), 0);
+        assertEquals(0.9143999707, TestUtils.round(converter.convert(3.0), 10), 0);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }

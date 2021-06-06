@@ -13,13 +13,13 @@ public class YardTest implements TestUnit {
 
     @Test
     public void toBaseUnitTest() {
-        assertEquals(36, length.toBaseUnit().apply(1.0), 0);
+        assertEquals(3, length.toBaseUnit().apply(1.0), 0);
         assertEquals(0, length.toBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void fromBaseUnitTest() {
-        assertEquals(1, length.fromBaseUnit().apply(36.0), 0);
+        assertEquals(1, length.fromBaseUnit().apply(3.0), 0);
         assertEquals(0, length.fromBaseUnit().apply(0.0), 0);
     }
     

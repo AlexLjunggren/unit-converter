@@ -14,13 +14,13 @@ public class FootTest implements TestUnit {
 
     @Test
     public void toBaseUnitTest() {
-        assertEquals(12, length.toBaseUnit().apply(1.0), 0);
+        assertEquals(1, length.toBaseUnit().apply(1.0), 0);
         assertEquals(0, length.toBaseUnit().apply(0.0), 0);
     }
     
     @Test
     public void fromBaseUnitTest() {
-        assertEquals(1, length.fromBaseUnit().apply(12.0), 0);
+        assertEquals(1, length.fromBaseUnit().apply(1.0), 0);
         assertEquals(0, length.fromBaseUnit().apply(0.0), 0);
     }
     

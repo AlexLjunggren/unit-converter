@@ -18,7 +18,7 @@ public class BaseLengthSiToUsTest {
     @Test
     public void baseUnitTest() {
         double baseUnit = baseChain.baseUnit(new Meter(), new Inch()).apply(1.0);
-        assertEquals(39.37, baseUnit, 0);
+        assertEquals(3.28084, baseUnit, 0);
     }
     
     @Test

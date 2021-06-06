@@ -9,12 +9,12 @@ public class Mile implements Length {
 
     @Override
     public Function<Double, Double> toBaseUnit() {
-        return x -> x * 63360;
+        return x -> x * 5280;
     }
 
     @Override
     public Function<Double, Double> fromBaseUnit() {
-        return x -> x / 63360;
+        return x -> x / 5280;
     }
 
     @Override

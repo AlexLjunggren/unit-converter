@@ -9,12 +9,12 @@ public class Foot implements Length {
 
     @Override
     public Function<Double, Double> toBaseUnit() {
-        return e -> e * 12;
+        return e -> e;
     }
 
     @Override
     public Function<Double, Double> fromBaseUnit() {
-        return e -> e / 12;
+        return e -> e;
     }
 
     @Override

@@ -9,12 +9,12 @@ public class Yard implements Length {
 
     @Override
     public Function<Double, Double> toBaseUnit() {
-        return x -> x * 36;
+        return x -> x * 3;
     }
 
     @Override
     public Function<Double, Double> fromBaseUnit() {
-        return x -> x /36;
+        return x -> x /3;
     }
 
     @Override
