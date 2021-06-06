@@ -37,6 +37,18 @@ Units (SI)
 - Meters
 - Kilometers
 
+## Area ##
+
+```java
+new AreaConverter().fromSquareFeet().toSquareMeters().convert(1.0);
+```
+
+Units (US)
+- Square Feet
+
+Units (SI)
+-Square Meters
+
 ## Volume ##
 
 ```java

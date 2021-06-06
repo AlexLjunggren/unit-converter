@@ -1,4 +1,4 @@
-package com.ljunggren.unitConversion.length.base;
+package com.ljunggren.unitConversion.area.base;
 
 import java.util.function.Function;
 
@@ -6,14 +6,14 @@ import com.ljunggren.unitConversion.Constants;
 import com.ljunggren.unitConversion.Unit;
 import com.ljunggren.unitConversion.base.BaseChain;
 
-public class BaseLengthSiToUs extends BaseChain {
+public class BaseAreaUsToSi extends BaseChain {
     
-    // Meter to Foot
+    // Square Foot to Square Meter
 
     @Override
     public Function<Double, Double> baseUnit(Unit from, Unit to) {
-        if (isSI(from) && isUS(to)) {
-            return x -> x * Constants.METER_TO_FOOT;
+        if (isUS(from) && isSI(to)) {
+            return x -> x * Constants.FOOT_TO_METER * Constants.FOOT_TO_METER;
         }
         return nextChain.baseUnit(from, to);
     }
