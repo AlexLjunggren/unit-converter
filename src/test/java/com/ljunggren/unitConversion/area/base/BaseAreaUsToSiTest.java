@@ -1,10 +1,9 @@
 package com.ljunggren.unitConversion.area.base;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.ljunggren.unitConversion.TestUtils;
 import com.ljunggren.unitConversion.area.units.si.SquareMeter;
 import com.ljunggren.unitConversion.area.units.us.SquareFoot;
 import com.ljunggren.unitConversion.base.BaseChain;
@@ -18,7 +17,7 @@ public class BaseAreaUsToSiTest {
     @Test
     public void baseUnitTest() {
         double baseUnit = baseChain.baseUnit(new SquareFoot(), new SquareMeter()).apply(1.0);
-        assertEquals(0.0929030341, TestUtils.round(baseUnit, 10), 0);
+        assertEquals(0.0929030341, baseUnit, 10);
     }
     
     @Test

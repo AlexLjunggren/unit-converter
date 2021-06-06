@@ -6,7 +6,6 @@ import static org.junit.Assert.assertNull;
 import org.junit.Test;
 
 import com.ljunggren.unitConversion.Converter;
-import com.ljunggren.unitConversion.TestUtils;
 
 public class AreaConverterTest {
 
@@ -21,7 +20,7 @@ public class AreaConverterTest {
     @Test
     public void convertFromSquareFeet() {
         Converter converter = new AreaConverter().fromSquareFeet().toSquareMeters();
-        assertEquals(0.0929030341, TestUtils.round(converter.convert(1.0), 10), 0);
+        assertEquals(0.0929030341, converter.convert(1.0), 10);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
@@ -45,7 +44,7 @@ public class AreaConverterTest {
     @Test
     public void convertToSquareMeters() {
         Converter converter = new AreaConverter().fromSquareFeet().toSquareMeters();
-        assertEquals(0.0929030341, TestUtils.round(converter.convert(1.0), 10), 0);
+        assertEquals(0.0929030341, converter.convert(1.0), 10);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }

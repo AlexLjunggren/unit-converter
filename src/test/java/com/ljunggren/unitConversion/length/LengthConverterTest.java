@@ -6,7 +6,6 @@ import static org.junit.Assert.assertNull;
 import org.junit.Test;
 
 import com.ljunggren.unitConversion.Converter;
-import com.ljunggren.unitConversion.TestUtils;
 
 public class LengthConverterTest {
 
@@ -141,7 +140,7 @@ public class LengthConverterTest {
     @Test
     public void convertToMetersTest() {
         Converter converter = new LengthConverter().fromFeet().toMeters();
-        assertEquals(0.9143999707, TestUtils.round(converter.convert(3.0), 10), 0);
+        assertEquals(0.9143999707, converter.convert(3.0), 10);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
