@@ -32,6 +32,22 @@ public class AreaConverterTest {
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
+    
+    @Test
+    public void convertFromAcres() {
+        Converter converter = new AreaConverter().fromAcres().toSquareFeet();
+        assertEquals(43560, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToAcres() {
+        Converter converter = new AreaConverter().fromSquareFeet().toAcres();
+        assertEquals(1, converter.convert(43560.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
 
     @Test
     public void convertFromSquareMeters() {

@@ -45,6 +45,7 @@ new AreaConverter().fromSquareFeet().toSquareMeters().convert(1.0);
 
 Units (US)
 - Square Feet
+- Acres
 
 Units (SI)
 -Square Meters

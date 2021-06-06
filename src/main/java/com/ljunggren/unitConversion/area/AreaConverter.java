@@ -4,6 +4,7 @@ import com.ljunggren.unitConversion.Converter;
 import com.ljunggren.unitConversion.area.base.BaseAreaSiToUs;
 import com.ljunggren.unitConversion.area.base.BaseAreaUsToSi;
 import com.ljunggren.unitConversion.area.units.si.SquareMeter;
+import com.ljunggren.unitConversion.area.units.us.Acre;
 import com.ljunggren.unitConversion.area.units.us.SquareFoot;
 import com.ljunggren.unitConversion.base.BaseNoChange;
 
@@ -20,6 +21,13 @@ public class AreaConverter extends Converter {
     }
     public AreaConverter toSquareFeet() {
         return setTo(new SquareFoot());
+    }
+    
+    public AreaConverter fromAcres() {
+        return setFrom(new Acre());
+    }
+    public AreaConverter toAcres() {
+        return setTo(new Acre());
     }
     
     public AreaConverter fromSquareMeters() {
