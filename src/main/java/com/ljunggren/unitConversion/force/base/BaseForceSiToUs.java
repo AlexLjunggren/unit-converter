@@ -2,6 +2,7 @@ package com.ljunggren.unitConversion.force.base;
 
 import java.util.function.Function;
 
+import com.ljunggren.unitConversion.Constants;
 import com.ljunggren.unitConversion.Unit;
 import com.ljunggren.unitConversion.base.BaseChain;
 
@@ -12,7 +13,7 @@ public class BaseForceSiToUs extends BaseChain {
     @Override
     public Function<Double, Double> baseUnit(Unit from, Unit to) {
         if (isSI(from) && isUS(to)) {
-            return x -> x / 4.4482216152605;
+            return x -> x * Constants.NEWTON_TO_POUND;
         }
         return nextChain.baseUnit(from, to);
     }
