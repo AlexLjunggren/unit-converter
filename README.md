@@ -81,6 +81,7 @@ new SpeedConverter90.fromMilesPerHour().toSpeedOfLight();
 Units (US)
 - Feet per second
 - Miles per hour
+- Knots
 
 Units (SI)
 - Meters per second

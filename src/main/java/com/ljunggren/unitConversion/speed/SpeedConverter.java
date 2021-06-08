@@ -8,6 +8,7 @@ import com.ljunggren.unitConversion.speed.units.si.KilometerPerHour;
 import com.ljunggren.unitConversion.speed.units.si.MeterPerSecond;
 import com.ljunggren.unitConversion.speed.units.si.SpeedOfLight;
 import com.ljunggren.unitConversion.speed.units.us.FootPerSecond;
+import com.ljunggren.unitConversion.speed.units.us.Knot;
 import com.ljunggren.unitConversion.speed.units.us.MilePerHour;
 
 public class SpeedConverter extends Converter {
@@ -30,6 +31,13 @@ public class SpeedConverter extends Converter {
     }
     public SpeedConverter toMilesPerHour() {
         return setTo(new MilePerHour());
+    }
+    
+    public SpeedConverter fromKnots() {
+        return setFrom(new Knot());
+    }
+    public SpeedConverter toKnots() {
+        return setTo(new Knot());
     }
     
     public SpeedConverter fromMetersPerSecond() {

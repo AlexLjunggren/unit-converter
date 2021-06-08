@@ -50,6 +50,22 @@ public class SpeedConverterTest {
     }
     
     @Test
+    public void convertFromKnots() {
+        Converter converter = new SpeedConverter().fromKnots().toMilesPerHour();
+        assertEquals(1.15078, converter.convert(1.0), 0.000001);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToKnots() {
+        Converter converter = new SpeedConverter().fromMilesPerHour().toKnots();
+        assertEquals(1, converter.convert(1.15078), 0.00001);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
     public void convertFromMetersPerSecondTest() {
         Converter converter = new SpeedConverter().fromMetersPerSecond().toFeetPerSecond();
         assertEquals(3.28084, converter.convert(1.0), 0);
