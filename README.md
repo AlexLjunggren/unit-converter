@@ -21,7 +21,7 @@ converter.label();
 ## Length ##
 
 ```java
-new LengthConverter().fromFeet().toMeters().convert(1.0);
+new LengthConverter().fromFeet().toMeters();
 ```
 
 Units (US)
@@ -40,7 +40,7 @@ Units (SI)
 ## Area ##
 
 ```java
-new AreaConverter().fromSquareFeet().toSquareMeters().convert(1.0);
+new AreaConverter().fromSquareFeet().toSquareMeters();
 ```
 
 Units (US)
@@ -53,7 +53,7 @@ Units (SI)
 ## Volume ##
 
 ```java
-new VolumeConverter().fromGallons().toLiters().convert(1.0);
+new VolumeConverter().fromGallons().toLiters();
 
 ```
 
@@ -72,10 +72,25 @@ Units (SI)
 - Cubic Centimeters
 - Cubic Meters
 
+## Speed ##
+
+```java
+new SpeedConverter90.fromMilesPerHour().toSpeedOfLight();
+```
+
+Units (US)
+- Feet per second
+- Miles per hour
+
+Units (SI)
+- Meters per second
+- Kilometers per hour
+- Speed of light
+
 ## Force ##
 
 ```java
-new ForceConverter().fromNewtons().toPoundForce().convert(1,0);
+new ForceConverter().fromNewtons().toPoundForce();
 ```
 
 Units (US)

@@ -20,7 +20,7 @@ public class AreaConverterTest {
     @Test
     public void convertFromSquareFeet() {
         Converter converter = new AreaConverter().fromSquareFeet().toSquareMeters();
-        assertEquals(0.0929030341, converter.convert(1.0), 10);
+        assertEquals(0.0929030341, converter.convert(1.0), 0.000000001);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
@@ -28,7 +28,7 @@ public class AreaConverterTest {
     @Test
     public void convertToSquareFeet() {
         Converter converter = new AreaConverter().fromSquareMeters().toSquareFeet();
-        assertEquals(1, converter.convert(0.0929030341), 9);
+        assertEquals(1, converter.convert(0.0929030341), 0.000000001);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
@@ -52,7 +52,7 @@ public class AreaConverterTest {
     @Test
     public void convertFromSquareMeters() {
         Converter converter = new AreaConverter().fromSquareMeters().toSquareFeet();
-        assertEquals(1, converter.convert(0.0929030341), 9);
+        assertEquals(1, converter.convert(0.0929030341), 0.000000001);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
@@ -60,7 +60,7 @@ public class AreaConverterTest {
     @Test
     public void convertToSquareMeters() {
         Converter converter = new AreaConverter().fromSquareFeet().toSquareMeters();
-        assertEquals(0.0929030341, converter.convert(1.0), 10);
+        assertEquals(0.0929030341, converter.convert(1.0), 0.0000000001);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }

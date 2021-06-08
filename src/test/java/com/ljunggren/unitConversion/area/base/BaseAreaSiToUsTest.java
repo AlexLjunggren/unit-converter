@@ -17,7 +17,7 @@ public class BaseAreaSiToUsTest {
     @Test
     public void baseUnitTest() {
         double baseUnit = baseChain.baseUnit(new SquareMeter(), new SquareFoot()).apply(0.0929030341);
-        assertEquals(1, baseUnit, 9);
+        assertEquals(1, baseUnit, 0.000000001);
     }
     
     @Test

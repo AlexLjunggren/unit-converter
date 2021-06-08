@@ -17,7 +17,7 @@ public class BaseForceUsToSiTest {
     @Test
     public void baseUnitTest() {
         double baseUnit = baseChain.baseUnit(new PoundForce(), new Newton()).apply(1.0);
-        assertEquals(4.4482216153, baseUnit, 10);
+        assertEquals(4.4482216153, baseUnit, 0.000000001);
     }
     
     @Test

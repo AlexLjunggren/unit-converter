@@ -20,7 +20,7 @@ public class ForceConverterTest {
     @Test
     public void convertFromPoundForceTest() {
         Converter converter = new ForceConverter().fromPoundForce().toNewtons();
-        assertEquals(4.4482216153, converter.convert(1.0), 10);
+        assertEquals(4.4482216153, converter.convert(1.0), 0.000000001);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
@@ -28,7 +28,7 @@ public class ForceConverterTest {
     @Test
     public void convertToPoundForceTest() {
         Converter converter = new ForceConverter().fromNewtons().toPoundForce();
-        assertEquals(0.2248089431, converter.convert(1.0), 10);
+        assertEquals(0.2248089431, converter.convert(1.0), 0.000000001);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
@@ -36,7 +36,7 @@ public class ForceConverterTest {
     @Test
     public void convertFromNewtonsTest() {
         Converter converter = new ForceConverter().fromNewtons().toPoundForce();
-        assertEquals(0.2248089431, converter.convert(1.0), 10);
+        assertEquals(0.2248089431, converter.convert(1.0), 0.000000001);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
@@ -44,7 +44,7 @@ public class ForceConverterTest {
     @Test
     public void convertToNewtonsTest() {
         Converter converter = new ForceConverter().fromPoundForce().toNewtons();
-        assertEquals(4.4482216153, converter.convert(1.0), 10);
+        assertEquals(4.4482216153, converter.convert(1.0), 0.000000001);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }

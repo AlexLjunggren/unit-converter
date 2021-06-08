@@ -140,7 +140,7 @@ public class LengthConverterTest {
     @Test
     public void convertToMetersTest() {
         Converter converter = new LengthConverter().fromFeet().toMeters();
-        assertEquals(0.9143999707, converter.convert(3.0), 10);
+        assertEquals(0.9143999707, converter.convert(3.0), 0.0000000001);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
