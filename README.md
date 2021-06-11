@@ -75,7 +75,7 @@ Units (SI)
 ## Speed ##
 
 ```java
-new SpeedConverter90.fromMilesPerHour().toSpeedOfLight();
+new SpeedConverter().fromMilesPerHour().toSpeedOfLight();
 ```
 
 Units (US)
