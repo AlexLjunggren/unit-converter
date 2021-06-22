@@ -29,6 +29,8 @@ Units (US)
 - Feet
 - Yards
 - Miles
+- Light Years
+- Parsecs
 
 Units (SI)
 - Millimeters

@@ -11,7 +11,9 @@ import com.ljunggren.unitConversion.length.units.si.Meter;
 import com.ljunggren.unitConversion.length.units.si.Millimeter;
 import com.ljunggren.unitConversion.length.units.us.Foot;
 import com.ljunggren.unitConversion.length.units.us.Inch;
+import com.ljunggren.unitConversion.length.units.us.LightYear;
 import com.ljunggren.unitConversion.length.units.us.Mile;
+import com.ljunggren.unitConversion.length.units.us.Parsec;
 import com.ljunggren.unitConversion.length.units.us.Yard;
 
 import lombok.Getter;
@@ -54,6 +56,20 @@ public class LengthConverter extends Converter {
         return setTo(new Mile());
     }
     
+    public LengthConverter fromLightYears() {
+        return setFrom(new LightYear());
+    }
+    public LengthConverter toLightYears() {
+        return setTo(new LightYear());
+    }
+    
+    public LengthConverter fromParsecs() {
+        return setFrom(new Parsec());
+    }
+    public LengthConverter toParsecs() {
+        return setTo(new Parsec());
+    }
+        
     public LengthConverter fromMillimeters() {
         return setFrom(new Millimeter());
     }

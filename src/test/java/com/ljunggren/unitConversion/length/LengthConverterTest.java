@@ -66,7 +66,7 @@ public class LengthConverterTest {
     }
     
     @Test
-    public void convertFromMiles() {
+    public void convertFromMilesTest() {
         Converter converter = new LengthConverter().fromMiles().toFeet();
         assertEquals(5280, converter.convert(1.0), 0);
         assertEquals(0, converter.convert(0.0), 0);
@@ -74,9 +74,41 @@ public class LengthConverterTest {
     }
     
     @Test
-    public void convertToMiles() {
+    public void convertToMilesTest() {
         Converter converter = new LengthConverter().fromFeet().toMiles();
         assertEquals(1, converter.convert(5280.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertFromLightYearsTest() {
+        Converter converter = new LengthConverter().fromLightYears().toFeet();
+        assertEquals(3.104E+16, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToLightYearsTest() {
+        Converter converter = new LengthConverter().fromFeet().toLightYears();
+        assertEquals(1, converter.convert(3.104E+16), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertFromParsecsTest() {
+        Converter converter = new LengthConverter().fromParsecs().toFeet();
+        assertEquals(1.012E+17, converter.convert(1.0), 0);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToParsecsTest() {
+        Converter converter = new LengthConverter().fromFeet().toParsecs();
+        assertEquals(1, converter.convert(1.012E+17), 0);
         assertEquals(0, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
