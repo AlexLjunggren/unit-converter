@@ -11,4 +11,8 @@ public class Constants {
     public static final double POUND_TO_NEWTON = 4.4482216152605;
     public static final double NEWTON_TO_POUND = 1 / POUND_TO_NEWTON;
     
+    public static final double POUND_TO_OUNCE = 16.0;
+    public static final double OUNCE_TO_POUND = 1 / POUND_TO_OUNCE;
+    
+    
 }
