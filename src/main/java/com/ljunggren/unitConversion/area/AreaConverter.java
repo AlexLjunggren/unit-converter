@@ -3,9 +3,9 @@ package com.ljunggren.unitConversion.area;
 import com.ljunggren.unitConversion.Converter;
 import com.ljunggren.unitConversion.area.base.BaseAreaSiToUs;
 import com.ljunggren.unitConversion.area.base.BaseAreaUsToSi;
-import com.ljunggren.unitConversion.area.units.si.SquareMeter;
-import com.ljunggren.unitConversion.area.units.us.Acre;
-import com.ljunggren.unitConversion.area.units.us.SquareFoot;
+import com.ljunggren.unitConversion.area.unit.si.SquareMeter;
+import com.ljunggren.unitConversion.area.unit.us.Acre;
+import com.ljunggren.unitConversion.area.unit.us.SquareFoot;
 import com.ljunggren.unitConversion.base.BaseNoChange;
 
 public class AreaConverter extends Converter {

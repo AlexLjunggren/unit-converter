@@ -4,17 +4,17 @@ import com.ljunggren.unitConversion.Converter;
 import com.ljunggren.unitConversion.base.BaseNoChange;
 import com.ljunggren.unitConversion.volume.base.BaseVolumeSiToUs;
 import com.ljunggren.unitConversion.volume.base.BaseVolumeUsToSi;
-import com.ljunggren.unitConversion.volume.units.si.CubicCentimeter;
-import com.ljunggren.unitConversion.volume.units.si.CubicMeter;
-import com.ljunggren.unitConversion.volume.units.si.Liter;
-import com.ljunggren.unitConversion.volume.units.si.Milliliter;
-import com.ljunggren.unitConversion.volume.units.us.Cup;
-import com.ljunggren.unitConversion.volume.units.us.FluidOunce;
-import com.ljunggren.unitConversion.volume.units.us.Gallon;
-import com.ljunggren.unitConversion.volume.units.us.Pint;
-import com.ljunggren.unitConversion.volume.units.us.Quart;
-import com.ljunggren.unitConversion.volume.units.us.Tablespoon;
-import com.ljunggren.unitConversion.volume.units.us.Teaspoon;
+import com.ljunggren.unitConversion.volume.unit.si.CubicCentimeter;
+import com.ljunggren.unitConversion.volume.unit.si.CubicMeter;
+import com.ljunggren.unitConversion.volume.unit.si.Liter;
+import com.ljunggren.unitConversion.volume.unit.si.Milliliter;
+import com.ljunggren.unitConversion.volume.unit.us.Cup;
+import com.ljunggren.unitConversion.volume.unit.us.FluidOunce;
+import com.ljunggren.unitConversion.volume.unit.us.Gallon;
+import com.ljunggren.unitConversion.volume.unit.us.Pint;
+import com.ljunggren.unitConversion.volume.unit.us.Quart;
+import com.ljunggren.unitConversion.volume.unit.us.Tablespoon;
+import com.ljunggren.unitConversion.volume.unit.us.Teaspoon;
 
 public class VolumeConverter extends Converter {
 

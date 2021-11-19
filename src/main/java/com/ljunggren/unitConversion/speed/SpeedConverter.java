@@ -4,12 +4,12 @@ import com.ljunggren.unitConversion.Converter;
 import com.ljunggren.unitConversion.base.BaseNoChange;
 import com.ljunggren.unitConversion.speed.base.BaseSpeedSiToUs;
 import com.ljunggren.unitConversion.speed.base.BaseSpeedUsToSi;
-import com.ljunggren.unitConversion.speed.units.si.KilometerPerHour;
-import com.ljunggren.unitConversion.speed.units.si.MeterPerSecond;
-import com.ljunggren.unitConversion.speed.units.si.SpeedOfLight;
-import com.ljunggren.unitConversion.speed.units.us.FootPerSecond;
-import com.ljunggren.unitConversion.speed.units.us.Knot;
-import com.ljunggren.unitConversion.speed.units.us.MilePerHour;
+import com.ljunggren.unitConversion.speed.unit.si.KilometerPerHour;
+import com.ljunggren.unitConversion.speed.unit.si.MeterPerSecond;
+import com.ljunggren.unitConversion.speed.unit.si.SpeedOfLight;
+import com.ljunggren.unitConversion.speed.unit.us.FootPerSecond;
+import com.ljunggren.unitConversion.speed.unit.us.Knot;
+import com.ljunggren.unitConversion.speed.unit.us.MilePerHour;
 
 public class SpeedConverter extends Converter {
 

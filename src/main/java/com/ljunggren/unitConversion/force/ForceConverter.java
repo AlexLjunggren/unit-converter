@@ -4,8 +4,8 @@ import com.ljunggren.unitConversion.Converter;
 import com.ljunggren.unitConversion.base.BaseNoChange;
 import com.ljunggren.unitConversion.force.base.BaseForceSiToUs;
 import com.ljunggren.unitConversion.force.base.BaseForceUsToSi;
-import com.ljunggren.unitConversion.force.units.si.Newton;
-import com.ljunggren.unitConversion.force.units.us.PoundForce;
+import com.ljunggren.unitConversion.force.unit.si.Newton;
+import com.ljunggren.unitConversion.force.unit.us.PoundForce;
 
 public class ForceConverter extends Converter {
 

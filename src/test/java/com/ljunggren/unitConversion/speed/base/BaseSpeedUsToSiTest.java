@@ -6,8 +6,8 @@ import org.junit.Test;
 
 import com.ljunggren.unitConversion.base.BaseChain;
 import com.ljunggren.unitConversion.base.BaseNoChange;
-import com.ljunggren.unitConversion.speed.units.si.MeterPerSecond;
-import com.ljunggren.unitConversion.speed.units.us.FootPerSecond;
+import com.ljunggren.unitConversion.speed.unit.si.MeterPerSecond;
+import com.ljunggren.unitConversion.speed.unit.us.FootPerSecond;
 
 public class BaseSpeedUsToSiTest {
 

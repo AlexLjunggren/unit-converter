@@ -4,8 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.ljunggren.unitConversion.area.units.si.SquareMeter;
-import com.ljunggren.unitConversion.area.units.us.SquareFoot;
+import com.ljunggren.unitConversion.area.unit.si.SquareMeter;
+import com.ljunggren.unitConversion.area.unit.us.SquareFoot;
 import com.ljunggren.unitConversion.base.BaseChain;
 import com.ljunggren.unitConversion.base.BaseNoChange;
 

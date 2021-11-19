@@ -4,7 +4,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import com.ljunggren.unitConversion.length.units.si.Meter;
+import com.ljunggren.unitConversion.length.unit.si.Meter;
 
 public class BaseNoChangeTest {
 

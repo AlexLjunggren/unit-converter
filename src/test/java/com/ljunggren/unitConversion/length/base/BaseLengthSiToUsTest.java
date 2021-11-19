@@ -6,9 +6,9 @@ import org.junit.Test;
 
 import com.ljunggren.unitConversion.base.BaseChain;
 import com.ljunggren.unitConversion.base.BaseNoChange;
-import com.ljunggren.unitConversion.length.units.si.Meter;
-import com.ljunggren.unitConversion.length.units.us.Foot;
-import com.ljunggren.unitConversion.length.units.us.Inch;
+import com.ljunggren.unitConversion.length.unit.si.Meter;
+import com.ljunggren.unitConversion.length.unit.us.Foot;
+import com.ljunggren.unitConversion.length.unit.us.Inch;
 
 public class BaseLengthSiToUsTest {
     

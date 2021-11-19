@@ -6,8 +6,8 @@ import org.junit.Test;
 
 import com.ljunggren.unitConversion.base.BaseChain;
 import com.ljunggren.unitConversion.base.BaseNoChange;
-import com.ljunggren.unitConversion.volume.units.si.Liter;
-import com.ljunggren.unitConversion.volume.units.us.FluidOunce;
+import com.ljunggren.unitConversion.volume.unit.si.Liter;
+import com.ljunggren.unitConversion.volume.unit.us.FluidOunce;
 
 public class BaseVolumeSiToUsTest {
     

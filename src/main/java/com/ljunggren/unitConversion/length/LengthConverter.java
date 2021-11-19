@@ -4,17 +4,17 @@ import com.ljunggren.unitConversion.Converter;
 import com.ljunggren.unitConversion.base.BaseNoChange;
 import com.ljunggren.unitConversion.length.base.BaseLengthSiToUs;
 import com.ljunggren.unitConversion.length.base.BaseLengthUsToSi;
-import com.ljunggren.unitConversion.length.units.si.Centimeter;
-import com.ljunggren.unitConversion.length.units.si.Decimeter;
-import com.ljunggren.unitConversion.length.units.si.Kilometer;
-import com.ljunggren.unitConversion.length.units.si.Meter;
-import com.ljunggren.unitConversion.length.units.si.Millimeter;
-import com.ljunggren.unitConversion.length.units.us.Foot;
-import com.ljunggren.unitConversion.length.units.us.Inch;
-import com.ljunggren.unitConversion.length.units.us.LightYear;
-import com.ljunggren.unitConversion.length.units.us.Mile;
-import com.ljunggren.unitConversion.length.units.us.Parsec;
-import com.ljunggren.unitConversion.length.units.us.Yard;
+import com.ljunggren.unitConversion.length.unit.si.Centimeter;
+import com.ljunggren.unitConversion.length.unit.si.Decimeter;
+import com.ljunggren.unitConversion.length.unit.si.Kilometer;
+import com.ljunggren.unitConversion.length.unit.si.Meter;
+import com.ljunggren.unitConversion.length.unit.si.Millimeter;
+import com.ljunggren.unitConversion.length.unit.us.Foot;
+import com.ljunggren.unitConversion.length.unit.us.Inch;
+import com.ljunggren.unitConversion.length.unit.us.LightYear;
+import com.ljunggren.unitConversion.length.unit.us.Mile;
+import com.ljunggren.unitConversion.length.unit.us.Parsec;
+import com.ljunggren.unitConversion.length.unit.us.Yard;
 
 import lombok.Getter;
 
