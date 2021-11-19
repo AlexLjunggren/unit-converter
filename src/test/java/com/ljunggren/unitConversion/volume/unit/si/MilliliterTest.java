@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import com.ljunggren.unitConversion.TestUnit;
 import com.ljunggren.unitConversion.volume.Volume;
-import com.ljunggren.unitConversion.volume.unit.si.Milliliter;
 
 public class MilliliterTest implements TestUnit {
     

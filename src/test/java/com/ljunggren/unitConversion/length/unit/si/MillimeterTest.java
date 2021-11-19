@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import com.ljunggren.unitConversion.TestUnit;
 import com.ljunggren.unitConversion.length.Length;
-import com.ljunggren.unitConversion.length.unit.si.Millimeter;
 
 public class MillimeterTest implements TestUnit {
     

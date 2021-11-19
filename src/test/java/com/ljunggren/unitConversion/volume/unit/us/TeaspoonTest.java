@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import com.ljunggren.unitConversion.TestUnit;
 import com.ljunggren.unitConversion.volume.Volume;
-import com.ljunggren.unitConversion.volume.unit.us.Teaspoon;
 
 public class TeaspoonTest implements TestUnit {
     

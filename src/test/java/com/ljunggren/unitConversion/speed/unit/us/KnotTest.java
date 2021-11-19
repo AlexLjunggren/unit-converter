@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import com.ljunggren.unitConversion.TestUnit;
 import com.ljunggren.unitConversion.speed.Speed;
-import com.ljunggren.unitConversion.speed.unit.us.Knot;
 
 public class KnotTest implements TestUnit {
 

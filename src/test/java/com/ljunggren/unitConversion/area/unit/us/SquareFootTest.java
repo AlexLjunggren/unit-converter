@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import com.ljunggren.unitConversion.TestUnit;
 import com.ljunggren.unitConversion.area.Area;
-import com.ljunggren.unitConversion.area.unit.us.SquareFoot;
 
 public class SquareFootTest implements TestUnit {
     

@@ -1,12 +1,12 @@
 package com.ljunggren.unitConversion.volume.unit.si;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
 import com.ljunggren.unitConversion.TestUnit;
 import com.ljunggren.unitConversion.volume.Volume;
-import com.ljunggren.unitConversion.volume.unit.si.CubicCentimeter;
 
 public class CubicCentimeterTest implements TestUnit {
     

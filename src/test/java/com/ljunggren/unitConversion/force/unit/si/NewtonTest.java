@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import com.ljunggren.unitConversion.TestUnit;
 import com.ljunggren.unitConversion.force.Force;
-import com.ljunggren.unitConversion.force.unit.si.Newton;
 
 public class NewtonTest implements TestUnit {
     
