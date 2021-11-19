@@ -11,7 +11,7 @@ import com.ljunggren.unitConversion.volume.unit.us.FluidOunce;
 
 public class BaseVolumeSiToUsTest {
     
-    private BaseChain baseChain =  new BaseVolumeSiToUs()
+    private BaseChain baseChain = new BaseVolumeSiToUs()
             .nextChain(new BaseNoChange());
 
     @Test
