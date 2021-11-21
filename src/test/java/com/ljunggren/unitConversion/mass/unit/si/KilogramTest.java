@@ -4,9 +4,10 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+import com.ljunggren.unitConversion.TestUnit;
 import com.ljunggren.unitConversion.mass.Mass;
 
-public class KilogramTest {
+public class KilogramTest implements TestUnit {
     
     private Mass mass = new Kilogram();
 

@@ -5,9 +5,10 @@ import static org.junit.Assert.assertNotNull;
 
 import org.junit.Test;
 
+import com.ljunggren.unitConversion.TestUnit;
 import com.ljunggren.unitConversion.mass.Mass;
 
-public class GramTest {
+public class GramTest implements TestUnit {
 
     private Mass mass = new Gram();
 
