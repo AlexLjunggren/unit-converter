@@ -94,6 +94,18 @@ Units (SI)
 - Kilometers per hour
 - Speed of light
 
+## Temperature ##
+
+```java
+new TemperatureConverter().fromCelsius().toFahrenheit();
+```
+
+Units (US)
+- Celsius
+
+Units (SI)
+- Fahrenheit
+
 ## Volume ##
 
 ```java
