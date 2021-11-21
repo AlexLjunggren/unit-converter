@@ -1,4 +1,4 @@
-package com.ljunggren.unitConversion.weight.base;
+package com.ljunggren.unitConversion.mass.base;
 
 import java.util.function.Function;
 
@@ -6,14 +6,14 @@ import com.ljunggren.unitConversion.Constants;
 import com.ljunggren.unitConversion.Unit;
 import com.ljunggren.unitConversion.base.BaseChain;
 
-public class BaseWeightSiToUs extends BaseChain {
+public class BaseMassSiToUs extends BaseChain {
     
-    // Ounce to Pound
+    // Kilogram to Pound
 
     @Override
     public Function<Double, Double> baseUnit(Unit from, Unit to) {
         if (isSI(from) && isUS(to)) {
-            return x -> x * Constants.OUNCE_TO_POUND;
+            return x -> x * Constants.KILOGRAM_TO_POUND;
         }
         return nextChain.baseUnit(from, to);
     }

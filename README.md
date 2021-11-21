@@ -18,6 +18,31 @@ Get unit label
 converter.label();
 ```
 
+## Area ##
+
+```java
+new AreaConverter().fromSquareFeet().toSquareMeters();
+```
+
+Units (US)
+- Square Feet
+- Acres
+
+Units (SI)
+- Square Meters
+
+## Force ##
+
+```java
+new ForceConverter().fromNewtons().toPoundForce();
+```
+
+Units (US)
+- Pounds (force)
+
+Units (SI)
+- Newtons
+
 ## Length ##
 
 ```java
@@ -39,18 +64,35 @@ Units (SI)
 - Meters
 - Kilometers
 
-## Area ##
+## Mass ##
 
 ```java
-new AreaConverter().fromSquareFeet().toSquareMeters();
+new MassConverter().fromGrams().toPounds();
 ```
 
 Units (US)
-- Square Feet
-- Acres
+- Ounces
+- Pounds
 
 Units (SI)
-- Square Meters
+- Grams
+- Kilograms
+
+## Speed ##
+
+```java
+new SpeedConverter().fromMilesPerHour().toSpeedOfLight();
+```
+
+Units (US)
+- Feet per second
+- Miles per hour
+- Knots
+
+Units (SI)
+- Meters per second
+- Kilometers per hour
+- Speed of light
 
 ## Volume ##
 
@@ -74,42 +116,3 @@ Units (SI)
 - Cubic Centimeters
 - Cubic Meters
 
-## Speed ##
-
-```java
-new SpeedConverter().fromMilesPerHour().toSpeedOfLight();
-```
-
-Units (US)
-- Feet per second
-- Miles per hour
-- Knots
-
-Units (SI)
-- Meters per second
-- Kilometers per hour
-- Speed of light
-
-## Force ##
-
-```java
-new ForceConverter().fromNewtons().toPoundForce();
-```
-
-Units (US)
-- Pounds (force)
-
-Units (SI)
-- Newtons
-
-## Weight ##
-
-```java
-new WeightConverter().fromOunces().toPounds();
-```
-
-Units (US)
-- Pounds
-
-Units (SI)
-- Ounces

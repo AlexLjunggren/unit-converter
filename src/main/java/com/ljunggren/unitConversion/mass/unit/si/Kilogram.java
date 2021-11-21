@@ -1,11 +1,11 @@
-package com.ljunggren.unitConversion.weight.unit.si;
+package com.ljunggren.unitConversion.mass.unit.si;
 
 import java.util.function.Function;
 
 import com.ljunggren.unitConversion.System;
-import com.ljunggren.unitConversion.weight.Weight;
+import com.ljunggren.unitConversion.mass.Mass;
 
-public class Ounce implements Weight {
+public class Kilogram implements Mass {
 
     @Override
     public Function<Double, Double> toBaseUnit() {
@@ -24,7 +24,7 @@ public class Ounce implements Weight {
 
     @Override
     public String label() {
-        return "oz";
+        return "kg";
     }
 
 }

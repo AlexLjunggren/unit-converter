@@ -1,20 +1,20 @@
-package com.ljunggren.unitConversion.weight.unit.us;
+package com.ljunggren.unitConversion.mass.unit.us;
 
 import java.util.function.Function;
 
 import com.ljunggren.unitConversion.System;
-import com.ljunggren.unitConversion.weight.Weight;
+import com.ljunggren.unitConversion.mass.Mass;
 
-public class Pound implements Weight {
+public class Ounce implements Mass {
 
     @Override
     public Function<Double, Double> toBaseUnit() {
-        return x -> x;
+        return x -> x / 16;
     }
 
     @Override
     public Function<Double, Double> fromBaseUnit() {
-        return x -> x;
+        return x -> x * 16;
     }
 
     @Override
@@ -24,7 +24,7 @@ public class Pound implements Weight {
 
     @Override
     public String label() {
-        return "lbs";
+        return "oz";
     }
 
 }
