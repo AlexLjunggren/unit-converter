@@ -1,4 +1,4 @@
-package com.ljunggren.unitConversion.temperature.unit.us;
+package com.ljunggren.unitConversion.temperature.unit.si;
 
 import java.util.function.Function;
 
@@ -19,7 +19,7 @@ public class Celsius implements Temperature {
 
     @Override
     public System system() {
-        return System.US;
+        return System.SI;
     }
 
     @Override

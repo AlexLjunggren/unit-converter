@@ -1,4 +1,4 @@
-package com.ljunggren.unitConversion.temperature.unit.us;
+package com.ljunggren.unitConversion.temperature.unit.si;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;

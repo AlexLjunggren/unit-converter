@@ -43,5 +43,18 @@ public class TemperatureConverterTest {
         assertEquals(32, converter.convert(0.0), 0);
         assertNull(converter.convert(null));
     }
+    
+    @Test
+    public void convertFromKelvinTest() {
+        Converter converter = new TemperatureConverter().fromKelvin().toFahrenheit();
+        assertEquals(-279.67,converter.convert(100.0), 2);
+        assertNull(converter.convert(null));
+    }
+    @Test
+    public void convertToKelvinTest() {
+        Converter converter = new TemperatureConverter().fromCelsius().toKelvin();
+        assertEquals(373.15, converter.convert(100.0), 0);
+        assertNull(converter.convert(null));
+    }
 
 }

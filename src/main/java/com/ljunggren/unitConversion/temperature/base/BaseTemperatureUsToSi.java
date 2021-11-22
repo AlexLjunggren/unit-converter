@@ -12,7 +12,7 @@ public class BaseTemperatureUsToSi extends BaseChain {
     @Override
     public Function<Double, Double> baseUnit(Unit from, Unit to) {
         if (isUS(from) && isSI(to)) {
-            return x -> (x * (9/5)) + 32;
+            return x -> (x - 32) * (5.0/9.0);
         }
         return nextChain.baseUnit(from, to);
     }

@@ -5,16 +5,16 @@ import java.util.function.Function;
 import com.ljunggren.unitConversion.System;
 import com.ljunggren.unitConversion.temperature.Temperature;
 
-public class Fahrenheit implements Temperature {
+public class Kelvin implements Temperature {
 
     @Override
     public Function<Double, Double> toBaseUnit() {
-        return x -> x;
+        return x -> x - 273.15;
     }
 
     @Override
     public Function<Double, Double> fromBaseUnit() {
-        return x -> x;
+        return x -> x + 273.15;
     }
 
     @Override
@@ -24,7 +24,7 @@ public class Fahrenheit implements Temperature {
 
     @Override
     public String label() {
-        return "F";
+        return "K";
     }
 
 }

@@ -4,8 +4,9 @@ import com.ljunggren.unitConversion.Converter;
 import com.ljunggren.unitConversion.base.BaseNoChange;
 import com.ljunggren.unitConversion.temperature.base.BaseTemperatureSiToUs;
 import com.ljunggren.unitConversion.temperature.base.BaseTemperatureUsToSi;
-import com.ljunggren.unitConversion.temperature.unit.si.Fahrenheit;
-import com.ljunggren.unitConversion.temperature.unit.us.Celsius;
+import com.ljunggren.unitConversion.temperature.unit.si.Celsius;
+import com.ljunggren.unitConversion.temperature.unit.si.Kelvin;
+import com.ljunggren.unitConversion.temperature.unit.us.Fahrenheit;
 
 public class TemperatureConverter extends Converter {
 
@@ -27,6 +28,13 @@ public class TemperatureConverter extends Converter {
     }
     public TemperatureConverter toFahrenheit() {
         return setTo(new Fahrenheit());
+    }
+    
+    public TemperatureConverter fromKelvin() {
+        return setFrom(new Kelvin());
+    }
+    public TemperatureConverter toKelvin() {
+        return setTo(new Kelvin());
     }
 
 }

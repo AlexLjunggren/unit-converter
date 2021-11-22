@@ -6,8 +6,8 @@ import org.junit.Test;
 
 import com.ljunggren.unitConversion.base.BaseChain;
 import com.ljunggren.unitConversion.base.BaseNoChange;
-import com.ljunggren.unitConversion.temperature.unit.si.Fahrenheit;
-import com.ljunggren.unitConversion.temperature.unit.us.Celsius;
+import com.ljunggren.unitConversion.temperature.unit.si.Celsius;
+import com.ljunggren.unitConversion.temperature.unit.us.Fahrenheit;
 
 public class BaseTemperatureSiToUsTest {
     
@@ -16,13 +16,13 @@ public class BaseTemperatureSiToUsTest {
 
     @Test
     public void baseUnitTest() {
-        double baseUnit = baseChain.baseUnit(new Fahrenheit(), new Celsius()).apply(32.0);
-        assertEquals(0.0, baseUnit, 0);
+        double baseUnit = baseChain.baseUnit(new Celsius(), new Fahrenheit()).apply(0.0);
+        assertEquals(32.0, baseUnit, 0);
     }
     
     @Test
     public void baseUnitNotTriggeredTest() {
-        double baseUnit = baseChain.baseUnit(new Fahrenheit(), new Fahrenheit()).apply(32.0);
+        double baseUnit = baseChain.baseUnit(new Celsius(), new Celsius()).apply(32.0);
         assertEquals(32.0, baseUnit, 0);
     }
 
