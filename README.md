@@ -101,10 +101,11 @@ new TemperatureConverter().fromCelsius().toFahrenheit();
 ```
 
 Units (US)
-- Celsius
+- Fahrenheit
 
 Units (SI)
-- Fahrenheit
+- Celsius
+- Kelvin
 
 ## Volume ##
 
