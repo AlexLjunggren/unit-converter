@@ -8,6 +8,7 @@ import com.ljunggren.unitConversion.mass.unit.si.Gram;
 import com.ljunggren.unitConversion.mass.unit.si.Kilogram;
 import com.ljunggren.unitConversion.mass.unit.us.Ounce;
 import com.ljunggren.unitConversion.mass.unit.us.Pound;
+import com.ljunggren.unitConversion.mass.unit.us.Stone;
 
 public class MassConverter extends Converter {
 
@@ -29,6 +30,13 @@ public class MassConverter extends Converter {
     }
     public MassConverter toPounds() {
         return setTo(new Pound());
+    }
+    
+    public MassConverter fromStones() {
+        return setFrom(new Stone());
+    }
+    public MassConverter toStones() {
+        return setTo(new Stone());
     }
     
     public MassConverter fromGrams() {

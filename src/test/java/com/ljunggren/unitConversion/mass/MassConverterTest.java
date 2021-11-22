@@ -50,6 +50,22 @@ public class MassConverterTest {
     }
     
     @Test
+    public void convertFromStones() {
+        Converter converter = new MassConverter().fromStones().toGrams();
+        assertEquals(6350.29, converter.convert(1.0), 2);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
+    public void convertToStones() {
+        Converter converter = new MassConverter().fromOunces().toStones();
+        assertEquals(0.00446429, converter.convert(1.0), 8);
+        assertEquals(0, converter.convert(0.0), 0);
+        assertNull(converter.convert(null));
+    }
+    
+    @Test
     public void convertFromGramsTest() {
         Converter converter = new MassConverter().fromGrams().toKilograms();
         assertEquals(1, converter.convert(1000.0), 0);

@@ -73,6 +73,7 @@ new MassConverter().fromGrams().toPounds();
 Units (US)
 - Ounces
 - Pounds
+- Stones
 
 Units (SI)
 - Grams
