@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.TestUnit;
 import io.ljunggren.unit.converter.area.Area;
-import io.ljunggren.unit.converter.area.unit.us.Acre;
 
 public class AcreTest implements TestUnit {
     

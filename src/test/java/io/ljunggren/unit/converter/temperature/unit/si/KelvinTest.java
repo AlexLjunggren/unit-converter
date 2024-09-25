@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.TestUnit;
 import io.ljunggren.unit.converter.temperature.Temperature;
-import io.ljunggren.unit.converter.temperature.unit.si.Kelvin;
 
 public class KelvinTest implements TestUnit {
     

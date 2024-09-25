@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.TestUnit;
 import io.ljunggren.unit.converter.force.Force;
-import io.ljunggren.unit.converter.force.unit.us.PoundForce;
 
 public class PoundForceTest implements TestUnit {
     

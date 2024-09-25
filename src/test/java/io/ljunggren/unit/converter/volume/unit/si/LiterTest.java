@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.TestUnit;
 import io.ljunggren.unit.converter.volume.Volume;
-import io.ljunggren.unit.converter.volume.unit.si.Liter;
 
 public class LiterTest implements TestUnit {
     

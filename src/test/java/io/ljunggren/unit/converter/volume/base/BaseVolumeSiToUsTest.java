@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.base.BaseChain;
 import io.ljunggren.unit.converter.base.BaseNoChange;
-import io.ljunggren.unit.converter.volume.base.BaseVolumeSiToUs;
 import io.ljunggren.unit.converter.volume.unit.si.Liter;
 import io.ljunggren.unit.converter.volume.unit.us.FluidOunce;
 

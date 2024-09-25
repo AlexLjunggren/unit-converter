@@ -4,7 +4,6 @@ import static org.junit.Assert.assertNull;
 
 import org.junit.Test;
 
-import io.ljunggren.unit.converter.Converter;
 import io.ljunggren.unit.converter.area.AreaConverter;
 
 public class ConverterTest {

@@ -4,7 +4,6 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
-import io.ljunggren.unit.converter.area.base.BaseAreaUsToSi;
 import io.ljunggren.unit.converter.area.unit.si.SquareMeter;
 import io.ljunggren.unit.converter.area.unit.us.SquareFoot;
 import io.ljunggren.unit.converter.base.BaseChain;

@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.base.BaseChain;
 import io.ljunggren.unit.converter.base.BaseNoChange;
-import io.ljunggren.unit.converter.temperature.base.BaseTemperatureUsToSi;
 import io.ljunggren.unit.converter.temperature.unit.si.Celsius;
 import io.ljunggren.unit.converter.temperature.unit.us.Fahrenheit;
 

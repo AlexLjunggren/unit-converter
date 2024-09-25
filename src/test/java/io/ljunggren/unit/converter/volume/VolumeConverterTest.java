@@ -6,7 +6,6 @@ import static org.junit.Assert.assertNull;
 import org.junit.Test;
 
 import io.ljunggren.unit.converter.Converter;
-import io.ljunggren.unit.converter.volume.VolumeConverter;
 
 public class VolumeConverterTest {
 

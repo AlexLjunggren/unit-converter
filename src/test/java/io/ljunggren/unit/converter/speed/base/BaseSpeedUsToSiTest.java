@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.base.BaseChain;
 import io.ljunggren.unit.converter.base.BaseNoChange;
-import io.ljunggren.unit.converter.speed.base.BaseSpeedUsToSi;
 import io.ljunggren.unit.converter.speed.unit.si.MeterPerSecond;
 import io.ljunggren.unit.converter.speed.unit.us.FootPerSecond;
 

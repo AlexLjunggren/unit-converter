@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.TestUnit;
 import io.ljunggren.unit.converter.mass.Mass;
-import io.ljunggren.unit.converter.mass.unit.us.Ounce;
 
 public class OunceTest implements TestUnit {
     

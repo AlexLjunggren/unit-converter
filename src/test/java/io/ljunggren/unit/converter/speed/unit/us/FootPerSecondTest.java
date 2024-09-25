@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.TestUnit;
 import io.ljunggren.unit.converter.speed.Speed;
-import io.ljunggren.unit.converter.speed.unit.us.FootPerSecond;
 
 public class FootPerSecondTest implements TestUnit {
 

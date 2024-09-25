@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.TestUnit;
 import io.ljunggren.unit.converter.temperature.Temperature;
-import io.ljunggren.unit.converter.temperature.unit.us.Fahrenheit;
 
 public class FahrenheitTest implements TestUnit {
     

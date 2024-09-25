@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.base.BaseChain;
 import io.ljunggren.unit.converter.base.BaseNoChange;
-import io.ljunggren.unit.converter.length.base.BaseLengthUsToSi;
 import io.ljunggren.unit.converter.length.unit.si.Meter;
 import io.ljunggren.unit.converter.length.unit.us.Foot;
 import io.ljunggren.unit.converter.length.unit.us.Inch;

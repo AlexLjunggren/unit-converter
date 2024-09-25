@@ -6,7 +6,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.base.BaseChain;
 import io.ljunggren.unit.converter.base.BaseNoChange;
-import io.ljunggren.unit.converter.force.base.BaseForceSiToUs;
 import io.ljunggren.unit.converter.force.unit.si.Newton;
 import io.ljunggren.unit.converter.force.unit.us.PoundForce;
 

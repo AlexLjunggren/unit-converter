@@ -7,7 +7,6 @@ import org.junit.Test;
 
 import io.ljunggren.unit.converter.TestUnit;
 import io.ljunggren.unit.converter.length.Length;
-import io.ljunggren.unit.converter.length.unit.si.Meter;
 
 public class MeterTest implements TestUnit {
     
