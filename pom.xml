@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.ljunggren</groupId>
-	<artifactId>unit-conversion</artifactId>
+	<artifactId>unit-converter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>unit-conversion</name>
+	<name>unit-converter</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
